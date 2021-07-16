@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+  background-color: #f7f8f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  height:80vh;
+  width: 100vw;
+  background-color: white;
+}
+.primary-color{
+  color: #ff5454;
+}
+.primary-color-bg{
+  background-color: #ff5454 !important;
+}
+.form-normal-signin {
+  padding: 15px;
+}
+
+.form-normal-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-normal-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-normal-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-normal-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+//Social-media-integration-form
+
+.form-social-signin{
+  padding: 15px;
+  button{
+    margin-bottom: 10px;
+  }
+}
+
+.vertically-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.photo{
+  background-image: url(https://i.ibb.co/5GPPZ61/Capture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//button styling
+.btnFacebook { 
+  width: 165px;
+  height:35px;  
+  border-radius: 4px;
+  background: #3b5998;
+  color:white;
+  border:0px transparent;  
+  text-align: center;
+  margin:5px;
+  display: inline-block;
+}
+.btnGoogle { 
+  margin:5px;
+  border-radius: 4px;
+  background: #db3236 !important;
+  color:white !important;
+  text-align: center !important;
+  border:0px transparent;
+  text-align: center;
+}
+.btnFacebook:hover {
+  background: #3b5998;
+  opacity: 0.6;
+}
+.btnGoogle:hover {
+  background: #db3236;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    height: 100vh;
+  }
+}
