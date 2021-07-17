@@ -20,7 +20,10 @@ function App() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (e.currentTarget.email.value === "test@t.com" && e.currentTarget.password.value == "test") { AuthService.login("Test User", e.currentTarget.email.value, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MjfZ6NTThL_evKNd62AJ33su64xQsVtpog&usqp=CAU"); }
+    if (e.currentTarget.email.value === "test@t.com" && e.currentTarget.password.value == "test") { 
+      AuthService.login("Test User", e.currentTarget.email.value, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MjfZ6NTThL_evKNd62AJ33su64xQsVtpog&usqp=CAU"); 
+      history.push('/user');
+    }
     else
       setMsg("Invalid Credentials");
   }
