@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useEffect, useState } from 'react'
 import { GoogleLogin } from 'react-google-login';
 import { useHistory, Redirect } from "react-router-dom";
@@ -13,7 +12,9 @@ function App() {
   let user = AuthService.getCurrentUser();
   const [msg, setMsg] = useState('');
 
+
   useEffect(() => {
+    console.log(process.env.REACT_APP_GOOGLE_CLIENT_ID);
     if (user)
       history.push('/user');
   }, [])
@@ -75,7 +76,7 @@ function App() {
           <section className="form-social-signin w-100">
             <div>
               <GoogleLogin
-                clientId="326703092341-1oio7eebv2js321sts2um35qhnod3onn.apps.googleusercontent.com"
+                clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
                 isSignedIn={true}
@@ -85,7 +86,7 @@ function App() {
             </div>
             <div>
               <FacebookLogin
-                appId="307788344362281"
+                appId={process.env.REACT_APP_FACEBOOK_APP_ID}
                 fields="name,email,picture"
                 cssClass="btnFacebook w-100"
                 icon={<FaFacebookF />}
