@@ -14,7 +14,6 @@ function App() {
 
 
   useEffect(() => {
-    console.log(process.env.REACT_APP_GOOGLE_CLIENT_ID);
     if (user)
       history.push('/user');
   }, [])

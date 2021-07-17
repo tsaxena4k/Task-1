@@ -35,7 +35,7 @@ function Profile() {
                     <h2>{user.name}</h2>
                     <p style={{ color: "red" }}>{user.email}</p>
                     <GoogleLogout
-                        clientId="326703092341-1oio7eebv2js321sts2um35qhnod3onn.apps.googleusercontent.com"
+                        clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                         buttonText="Logout"
                         onLogoutSuccess={handleLogout}
                         className="w-100 btn btn-lg primary-color-bg"
