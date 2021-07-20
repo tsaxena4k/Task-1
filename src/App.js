@@ -21,7 +21,7 @@ function App() {
   const handleLogin = (e) => {
     e.preventDefault();
     if (e.currentTarget.email.value === "test@t.com" && e.currentTarget.password.value == "test") { 
-      AuthService.login("Test User", e.currentTarget.email.value, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MjfZ6NTThL_evKNd62AJ33su64xQsVtpog&usqp=CAU"); 
+      AuthService.login("Test User", e.currentTarget.email.value, "https://images-eu.ssl-images-amazon.com/images/I/61%2Bf9AEPPZL.png"); 
       history.push('/user');
     }
     else
