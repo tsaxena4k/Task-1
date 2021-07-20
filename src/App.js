@@ -52,7 +52,7 @@ function App() {
           <section className="form-normal-signin">
             {msg === '' ? null : <p>{msg}</p>}
             <form onSubmit={handleLogin}>
-              <h1 class="h3 mb-3 fw-bolder text-center primary-color">Please sign in</h1>
+              <h1 class="h3 mb-3 fw-bolder text-center" style={{color:'#3e425b'}}>Welcome</h1>
               <div class="form-floating">
                 <label for="email">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com" />
@@ -74,7 +74,7 @@ function App() {
               <button class="w-100 btn btn-lg primary-color-bg text-white" type="submit">Sign in</button>
             </form>
           </section>
-          <h3 className="text-center">Or</h3>
+          <h3 className="text-center" style={{color:'grey'}}>----------- Or ------------</h3>
           <section className="form-social-signin w-100">
             <div>
               <GoogleLogin
@@ -96,7 +96,7 @@ function App() {
             </div>
           </section>
         </div>   
-        <div className="col-sm-5 p-0 pb-3 d-sm-none d-md-block d-none">
+        <div className="col-sm-5 p-0 pb-0 d-sm-none d-md-block d-none">
           <section className="photo w-100 h-100"></section>
         </div>
       </div>

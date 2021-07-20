@@ -30,20 +30,20 @@ function Profile() {
         <div className="container profile">
             <div className="row w-100 h-100">
                 <div className="col-sm-7 text-center vertically-center">
-                <h1 class="h3 mb-3 fw-bolder text-center primary-color header">User Information</h1>
+                <h1 class="h3 mb-3 fw-bolder text-center header" style={{color:'#3e425b'}}>User Information</h1>
                     <img src={user.imageUrl} className="rounded-circle" />
                     <h2>{user.name}</h2>
-                    <p style={{ color: "red" }}>{user.email}</p>
+                    <p style={{ fontWeight:'bold'}}>{user.email}</p>
                     <GoogleLogout
                         clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                         buttonText="Logout"
                         onLogoutSuccess={handleLogout}
-                        className="w-100 btn btn-lg primary-color-bg"
+                        className="w-100 btn btn-lg "
                         theme="dark"
                     >
                     </GoogleLogout>
                 </div>
-                <div className="col-sm-5 p-0 pb-3 d-sm-none d-md-block d-none">
+                <div className="col-sm-5 p-0 d-sm-none d-md-block d-none">
                     <section className="photo w-100 h-100"></section>
                 </div>
             </div>

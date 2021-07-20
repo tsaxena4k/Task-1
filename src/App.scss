@@ -5,17 +5,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(https://jooinn.com/images/gradient-green.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container{
   height:80vh;
   width: 100vw;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
   background-color: white;
 }
 .primary-color{
-  color: #ff5454;
+  color: #713ff0;
 }
 .primary-color-bg{
-  background-color: #ff5454 !important;
+  background-color: #713ff0 !important;
 }
 .form-normal-signin {
   padding: 15px;
@@ -57,7 +63,7 @@ body {
   flex-direction: column;
 }
 .photo{
-  background-image: url(https://i.ibb.co/5GPPZ61/Capture.png);
+  background-image: url(https://i.ibb.co/86mtbHt/Capturek.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -96,5 +102,8 @@ body {
   .container{
     height: 100vh;
     padding-top: 2rem;
+    background-image: url(https://jooinn.com/images/gradient-green.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 }
