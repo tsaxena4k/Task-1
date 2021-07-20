@@ -31,7 +31,7 @@ function Profile() {
             <div className="row w-100 h-100">
                 <div className="col-sm-7 text-center vertically-center">
                 <h1 class="h3 mb-3 fw-bolder text-center header" style={{color:'#3e425b'}}>User Information</h1>
-                    <img src={user.imageUrl} className="rounded-circle" width="200"/>
+                    <img src={user.imageUrl} className="rounded-circle" style={{maxWidth:'200px'}}/>
                     <h2>{user.name}</h2>
                     <p style={{ fontWeight:'bold'}}>{user.email}</p>
                     <GoogleLogout
