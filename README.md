@@ -25,6 +25,8 @@
 [<img alt="Tuhsra | pinterest" width="22px" src="https://svgshare.com/i/SoQ.svg" />][pinterest]
 [<img alt="Tuhsra | dribble" width="22px" src="https://svgshare.com/i/Sni.svg" />][dribble]
 [<img alt="Tuhsra | codepen" width="22px" src="https://svgshare.com/i/Sn1.svg" />][codepen]
+  
+### Please provide your valuable feedback 😄
  
 </div>
 
